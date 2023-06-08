@@ -301,7 +301,7 @@ bool WideAngleCameraSensor::CreateCamera()
   }
 
   // \todo(nkoeng) these parameters via sdf
-  this->dataPtr->camera->SetAntiAliasing(2);
+  this->dataPtr->camera->SetAntiAliasing(0);
 
   math::Angle angle = cameraSdf->HorizontalFov();
 

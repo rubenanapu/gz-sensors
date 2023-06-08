@@ -345,7 +345,7 @@ bool RgbdCameraSensor::CreateCameras()
   }
 
   // \todo(nkoeng) these parameters via sdf
-  this->dataPtr->depthCamera->SetAntiAliasing(2);
+  this->dataPtr->depthCamera->SetAntiAliasing(0);
 
   math::Angle angle = cameraSdf->HorizontalFov();
   // todo(anyone) verify that rgb pixels align with d for angles >90 degrees.
